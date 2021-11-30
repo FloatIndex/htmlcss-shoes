@@ -1,0 +1,56 @@
+/* regole comuni */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+/* fine regole comuni */
+
+
+/* regole header */
+
+/* fine regole header */
+
+
+/* regole main */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container .shoes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .shoes .shoes-txt {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.container.red {
+    background-color: #f00;
+}
+
+.container.green {
+    background-color: rgb(5, 134, 5);
+}
+
+.container.yellow {
+    background-color: #ff0;
+}
+
+.container .shoes .shoes-txt.yellow {
+    color: #ff0;
+}
+
+.container .shoes .shoes-txt.green {
+    color: rgb(5, 134, 5);
+}
+/* fine regole main */
