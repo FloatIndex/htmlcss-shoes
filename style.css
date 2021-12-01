@@ -11,74 +11,76 @@
 /* regole menu */
 .menu {
     width: 100%;
+    height: 70px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 40px;
     z-index: 999;
 }
 
 .menu ul {
     position: absolute;
-    top: 40px;
-    right: 20px;
+    right: 0;
 }
 
 .menu ul li {
     list-style-type: none;
     display: inline-block;
-    background-color: white;
-    border-radius: 50%;
-    line-height: 50px;
-    margin-left: 20px;
-    box-shadow: 0px 5px 10px;
 }
 
 .menu ul li a {
+    display: inline-block; 
     text-decoration: none;
+    background-color: white;
     color: #000;
-    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 /* fine regole menu */
 
 
 /* regole main */
-.container {
+section {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-.container .shoes {
+section .shoes {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.container .shoes .shoes-txt {
+/* n.b: non è responsive */
+section .shoes .shoes-txt {
     text-align: center;
     font-size: 3em;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
-.container.red {
+#red {
     background-color: #f00;
 }
 
-.container.green {
+#green {
     background-color: rgb(5, 134, 5);
 }
 
-.container.yellow {
+#yellow {
     background-color: #ff0;
 }
 
-.container .shoes .shoes-txt.yellow {
+section .shoes .shoes-txt.yellow {
     color: #ff0;
 }
 
-.container .shoes .shoes-txt.green {
+section .shoes .shoes-txt.green {
     color: rgb(5, 134, 5);
 }
 /* fine regole main */
